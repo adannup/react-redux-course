@@ -5,7 +5,7 @@ const userInitialState = {
 
 const userReducer = (state = userInitialState, action) => {
   switch (action.type) {
-    case 'SET_NAME':
+    case 'SET_NAME_FULFILLED':
       return Object.assign({}, state, {
         name: action.payload,
       });
