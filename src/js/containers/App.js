@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import User from '../components/User';
 import Main from '../components/Main';
+import { setName } from '../actions/userActions';
 import './App.scss';
 
 class App extends Component {
@@ -40,7 +41,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  setName: name => dispatch({ type: 'SET_NAME', payload: name }),
+  setName: name => dispatch(setName(name)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
