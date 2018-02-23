@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import User from './User';
-import Main from './Main';
+import User from '../components/User';
+import Main from '../components/Main';
 import './App.scss';
 
 class App extends Component {
